@@ -371,7 +371,7 @@ async function handlePrCreatePage() {
         }
     }
 
-    if (prTemplateEnabled && body.value === '') {
+    if (prTemplateEnabled) {
         const nextBodyValue = prTemplate
             .replace('{{TICKETURL}}', ticketUrl)
             .replace('{{TICKETNUMBER}}', ticketNumber)
